@@ -115,7 +115,10 @@ grid-area: img4;
 .grid-container-nos div img {
     width: 80%;
     padding: 3%;
+    border-radius: 50%;
  }
+
+
 /* FOOTER */
 footer {
     background-color: #F49D1A; 
