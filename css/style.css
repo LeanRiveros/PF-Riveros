@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
 header {
   grid-area: encabezado;
   display: flex;
@@ -35,6 +39,7 @@ header nav {
   list-style-type: none;
   justify-content: space-evenly;
   align-items: center;
+  text-align: center;
 }
 .navbar li a {
   color: whitesmoke;
@@ -47,18 +52,31 @@ header nav {
 }
 
 main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #cdc2c2;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 10px, 10px, 10px, 10px;
   grid-area: principal;
 }
-
-.index-principal {
+main section {
   width: 100%;
+}
+main section p {
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 .img-index {
   width: 100%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.align-items-center {
+  align-items: center;
 }
 
 footer {
@@ -112,10 +130,46 @@ h4 {
   font-style: italic;
 }
 
+.form {
+  border-radius: 5px;
+  width: 500px;
+  height: auto;
+  padding: auto;
+  background-color: rgb(235, 83, 83);
+}
+.form-tittle {
+  padding: 10px;
+  text-align: center;
+}
+.form-label {
+  display: block;
+  font-size: 15px;
+}
+.form-input {
+  border: none;
+  outline: none;
+  padding: 8px;
+  width: 100%;
+  margin-bottom: 10px;
+  color: #78767c;
+  border-bottom: solid 2px #cfb6fd;
+}
+.form-textarea {
+  border: none;
+  outline: none;
+  padding: 8px;
+  font-size: 15px;
+  width: 100%;
+  margin-bottom: 10px;
+  color: #78767c;
+  border-bottom: solid 2px #cfb6fd;
+}
+
 .grid-container-index-no_principal {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 1fr 1fr;
+  gap: 5px;
   grid-template-areas: "imagen-1    descrip-1" "descrip-2   imagen-2";
 }
 
@@ -137,9 +191,6 @@ h4 {
 
 #no_principal {
   background-color: #e6e0e0;
-}
-
-#no_principal {
   grid-area: no_principal;
 }
 
@@ -147,6 +198,7 @@ h4 {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 1fr 1fr;
+  gap: 5px;
   grid-template-areas: "img1    img2" "img3   img4";
 }
 .grid-container-nos div {
@@ -184,51 +236,12 @@ h4 {
   padding: 1%;
 }
 
-body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-}
-
-.align-items-center {
+.flex-container-index {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
   align-items: center;
-}
-
-.form {
-  border-radius: 5px;
-  width: 500px;
-  height: auto;
-  padding: auto;
-  background-color: rgb(235, 83, 83);
-}
-.form-tittle {
-  padding: 10px;
-  text-align: center;
-}
-.form-label {
-  display: block;
-  font-size: 15px;
-}
-.form-input {
-  border: none;
-  outline: none;
-  padding: 8px;
-  width: 100%;
-  margin-bottom: 10px;
-  color: #78767c;
-  border-bottom: solid 2px #cfb6fd;
-}
-.form-textarea {
-  border: none;
-  outline: none;
-  padding: 8px;
-  font-size: 15px;
-  width: 100%;
-  margin-bottom: 10px;
-  color: #78767c;
-  border-bottom: solid 2px #cfb6fd;
-}
-
-.text-center {
-  text-align: center;
+  justify-content: space-around;
 }
 
 /* DESKTOP */
@@ -247,6 +260,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    gap: 5px;
     grid-template-areas: "seccion1 seccion2" "seccion3 seccion4";
   }
   .logo_footer {
@@ -280,7 +294,10 @@ body {
     justify-content: center;
   }
   nav {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
   }
   .contenedor_logo {
     width: 100%;
@@ -294,7 +311,7 @@ body {
     width: 70%;
   }
   .navbar {
-    width: 50%;
+    width: 100%;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -341,4 +358,4 @@ body {
     text-align: center;
     width: 75%;
   }
-}/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=style.css.map */
