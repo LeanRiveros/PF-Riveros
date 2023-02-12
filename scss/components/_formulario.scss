@@ -1,0 +1,38 @@
+.form {
+    border-radius: 5px;
+    width: 500px;
+    height: auto;
+    padding: auto;
+    background-color: map-get($paleta_de_colores,cuaternario);
+
+    &-tittle {
+        padding: 10px;
+        text-align: center;
+    }
+
+    &-label {
+        display: block;
+        font-size: 15px;
+    }
+
+    &-input {
+        border: none;
+    outline: none;
+    padding: 8px;
+    width: 100%;
+    margin-bottom: 10px;
+    color: #78767c;
+    border-bottom: solid 2px #cfb6fd;
+    }
+
+    &-textarea {
+        border: none;
+        outline: none;
+        padding: 8px;
+        font-size: 15px;
+        width: 100%;
+        margin-bottom: 10px;
+        color: #78767c;
+        border-bottom: solid 2px #cfb6fd;
+    }
+}

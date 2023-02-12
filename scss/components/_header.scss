@@ -1,0 +1,26 @@
+header {
+    grid-area: encabezado;
+    display: flex;
+    background-color: map-get($paleta_de_colores,secundario);
+
+    nav {
+        display: flex;
+        justify-content: flex-end;
+        width: 70%;
+    }
+}
+
+.contenedor_logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+
+    a {
+        text-align: center;
+    }
+}
+
+.logo {
+    width: 50%;
+}

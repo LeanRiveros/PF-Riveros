@@ -1,0 +1,23 @@
+main {
+    background-color: map-get($paleta_de_colores,primario);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    grid-area: principal;
+}
+
+.index-principal {
+    width: 80%;
+    height: 80%;
+}
+
+ 
+.img-index {
+    width: 100%;
+ }
+
+ .text-center {
+    text-align: center;
+}
+.align-items-center {
+    align-items: center;
+}

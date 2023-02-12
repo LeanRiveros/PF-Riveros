@@ -4,11 +4,6 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-}
-
-/* HEADER */
 header {
   grid-area: encabezado;
   display: flex;
@@ -51,7 +46,6 @@ header nav {
   background-color: #0D4C92;
 }
 
-/* MAIN */
 main {
   background-color: #cdc2c2;
   padding-top: 10px;
@@ -63,84 +57,15 @@ main {
   width: 100%;
 }
 
-#no_principal {
-  background-color: #e6e0e0;
-}
-
-.grid-container-index-no_principal {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas: "imagen-1    descrip-1" "descrip-2   imagen-2";
-}
-
-#no_principal_img1 {
-  grid-area: imagen-1;
-}
-
 .img-index {
   width: 100%;
 }
 
-#no_principal_txt1 {
-  grid-area: descrip-1;
-}
-
-#no_principal_img2 {
-  grid-area: imagen-2;
-}
-
-#no_principal_txt2 {
-  grid-area: descrip-2;
-}
-
-.grid-container-nos {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas: "img1    img2" "img3   img4";
-}
-.grid-container-nos div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.grid-container-nos div img {
-  width: 80%;
-  padding: 3%;
-  border-radius: 50%;
-}
-
-#nos-img1 {
-  grid-area: img1;
-}
-
-#nos-img2 {
-  grid-area: img2;
-}
-
-#nos-img3 {
-  grid-area: img3;
-}
-
-#nos-img4 {
-  grid-area: img4;
-}
-
-/* FOOTER */
 footer {
   background-color: #F49D1A;
   padding-top: 10px;
   padding-bottom: 10px;
   grid-area: pie_de_pagina;
-}
-
-.container_footer {
-  display: flex;
-  justify-content: space-around;
-}
-.container_footer div {
-  padding: 1%;
 }
 
 h4 {
@@ -187,6 +112,82 @@ h4 {
   font-style: italic;
 }
 
+.grid-container-index-no_principal {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "imagen-1    descrip-1" "descrip-2   imagen-2";
+}
+
+#no_principal_img1 {
+  grid-area: imagen-1;
+}
+
+#no_principal_txt1 {
+  grid-area: descrip-1;
+}
+
+#no_principal_img2 {
+  grid-area: imagen-2;
+}
+
+#no_principal_txt2 {
+  grid-area: descrip-2;
+}
+
+#no_principal {
+  background-color: #e6e0e0;
+}
+
+#no_principal {
+  grid-area: no_principal;
+}
+
+.grid-container-nos {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "img1    img2" "img3   img4";
+}
+.grid-container-nos div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.grid-container-nos div img {
+  width: 80%;
+  padding: 3%;
+  border-radius: 50%;
+}
+
+#nos-img1 {
+  grid-area: img1;
+}
+
+#nos-img2 {
+  grid-area: img2;
+}
+
+#nos-img3 {
+  grid-area: img3;
+}
+
+#nos-img4 {
+  grid-area: img4;
+}
+
+.container_footer {
+  display: flex;
+  justify-content: space-around;
+}
+.container_footer div {
+  padding: 1%;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
 .align-items-center {
   align-items: center;
 }
@@ -228,10 +229,6 @@ h4 {
 
 .text-center {
   text-align: center;
-}
-
-#no_principal {
-  grid-area: no_principal;
 }
 
 /* DESKTOP */

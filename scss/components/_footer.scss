@@ -1,0 +1,54 @@
+footer {
+    background-color: map-get($paleta_de_colores,terciario); 
+    padding-top: 10px;
+    padding-bottom: 10px;
+    grid-area: pie_de_pagina;
+}
+
+
+h4 {
+    color: lightblue;
+    font-size: medium;
+}
+.logo_footer {
+    width: 25%;
+}
+.info_footer {
+    text-align: left;
+    width: 25%;
+    
+    p {
+        font-size: small;
+        color: rgb(23, 19, 19);
+    }
+}
+
+.contactar_footer{
+    width: 25%;
+     ul{
+        list-style-type: none;
+        li {
+            a {
+                color: rgb(23, 19, 19);
+            }
+        }
+     }
+}
+
+.redes_footer {
+    width: 25%; 
+    
+    a { 
+        color: #78767c;
+        margin: 1%;
+    }
+}
+
+.copyright_footer {
+    background-color: whitesmoke;
+
+    p {
+        font-size: small;
+        font-style: italic;
+    }
+}

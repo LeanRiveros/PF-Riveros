@@ -1,0 +1,55 @@
+.grid-container-index-no_principal {
+   @include crear_contenedor_grid(50% 50%, 1fr 1fr, 5px);
+    grid-template-areas:    "imagen-1    descrip-1"
+                            "descrip-2   imagen-2";
+}
+ #no_principal_img1 {
+    grid-area: imagen-1;
+ }
+ #no_principal_txt1 {
+    grid-area: descrip-1;
+ }
+ #no_principal_img2 {
+    grid-area: imagen-2;
+ }
+ #no_principal_txt2 {
+    grid-area: descrip-2;
+ }
+ #no_principal {
+    background-color: #e6e0e0;
+}
+#no_principal {
+   grid-area: no_principal;
+}
+
+ .grid-container-nos {
+   @include crear_contenedor_grid(50% 50%, 1fr 1fr, 5px);
+    grid-template-areas:    "img1    img2"
+                            "img3   img4";
+
+                            div {
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+
+                                img {
+                                    width: 80%;
+                                    padding: 3%;
+                                    border-radius: 50%;
+                                }
+                            }
+ }
+
+#nos-img1 {
+grid-area: img1;
+ }
+
+#nos-img2 {
+grid-area: img2;
+ }
+#nos-img3 {
+grid-area: img3;
+ }
+#nos-img4 {
+grid-area: img4;
+ }
