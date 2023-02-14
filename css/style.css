@@ -336,6 +336,38 @@ h4 {
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-areas: "img1" "img2" "img3" "img4";
   }
+  /*contacto*/
+  .form {
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+  }
+  .form-tittle {
+    padding: 10px;
+    text-align: center;
+    font-size: 25px;
+  }
+  .form-label {
+    text-align: center;
+  }
+  .form-input {
+    text-align: center;
+  }
+  .form-textarea {
+    text-align: center;
+    height: 100px;
+  }
+  .form .form-checkbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .form .form-button {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
   /*footer */
   .container_footer {
     display: flex;
