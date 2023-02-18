@@ -1,5 +1,5 @@
 .grid-container-index-no_principal {
-   @include crear_contenedor_grid(50% 50%, 1fr 1fr, 5px);
+   @include crear_contenedor_grid(50% 50%, 1fr 1fr,);
     grid-template-areas:    "imagen-1    descrip-1"
                             "descrip-2   imagen-2";
 }
@@ -21,7 +21,7 @@
 }
 
  .grid-container-nos {
-   @include crear_contenedor_grid(50% 50%, 1fr 1fr, 5px);
+   @include crear_contenedor_grid(50% 50%, 50% 50%,);
     grid-template-areas:    "img1    img2"
                             "img3   img4";
 
