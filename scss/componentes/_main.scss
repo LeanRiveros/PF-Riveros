@@ -5,6 +5,7 @@ main {
     background-color: map-get($paleta_de_colores,primario);
     padding: 10px,10px,10px,10px;
     grid-area: principal;
+    }
     section {
         width: 100%;
         p {
@@ -24,4 +25,8 @@ main {
 }
 .align-items-center {
     align-items: center;
+}
+
+.container-carousel {
+    width: 80%;
 }
