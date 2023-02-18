@@ -64,8 +64,7 @@ main section {
   width: 100%;
 }
 main section p {
-  margin-bottom: 10px;
-  margin-top: 10px;
+  padding: 5px;
 }
 
 .img-index {
@@ -172,7 +171,6 @@ h4 {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 1fr 1fr;
-  gap: 3px;
   grid-template-areas: "imagen-1    descrip-1" "descrip-2   imagen-2";
 }
 
@@ -201,7 +199,6 @@ h4 {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 1fr 1fr;
-  gap: 3px;
   grid-template-areas: "img1    img2" "img3   img4";
 }
 .grid-container-nos div {
@@ -263,7 +260,6 @@ h4 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: 5px;
     grid-template-areas: "seccion1 seccion2" "seccion3 seccion4";
   }
   .logo_footer {

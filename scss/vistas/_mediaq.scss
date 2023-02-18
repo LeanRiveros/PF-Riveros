@@ -16,7 +16,7 @@ nav {
 
     /* footer */
     .container_footer {
-        @include crear_contenedor_grid(1fr 1fr, 1fr 1fr, 5px);
+        @include crear_contenedor_grid(1fr 1fr, 1fr 1fr);
         grid-template-areas:  "seccion1 seccion2"
                               "seccion3 seccion4";
     }

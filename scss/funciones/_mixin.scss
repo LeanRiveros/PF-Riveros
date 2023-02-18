@@ -1,6 +1,5 @@
-@mixin crear_contenedor_grid ($columna,$filas,$gap) {
+@mixin crear_contenedor_grid ($columna,$filas) {
     display: grid;
     grid-template-columns: $columna;
     grid-template-rows: $filas;
-    gap: $gap;
 }
